@@ -405,7 +405,10 @@
             <h2 class="section-title">Me Contacter</h2>
             
             <div class="contact-container">
-                <form action="contact.php" method="POST">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Remplace "TON_ACCESS_KEY_ICI" par ta clé Web3Forms -->
+                    <input type="hidden" name="access_key" value="TON_ACCESS_KEY_ICI">
+
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Votre nom complet" required>
                     </div>
@@ -418,6 +421,10 @@
                     <div class="form-group">
                         <textarea name="message" placeholder="Votre message..." required></textarea>
                     </div>
+
+                    <!-- Champ anti-spam masqué -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <button type="submit" class="btn-submit">
                         <span>Envoyer le message</span> <i class="fas fa-paper-plane"></i>
                     </button>
