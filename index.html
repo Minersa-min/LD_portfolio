@@ -405,11 +405,15 @@
             <h2 class="section-title">Me Contacter</h2>
             
             <div class="contact-container">
-                <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- Remplace "dufresnelina@yahoo.com" par ton email si besoin, et on désactive le captcha ennuyeux -->
+                <form action="https://formsubmit.co/dufresnelina@yahoo.com" method="POST">
                     
-                    <!-- Ta clé Web3Forms -->
-                    <input type="hidden" name="access_key" value="22361a19-a087-4592-bb1d-94ea7b7a417f">
+                    <!-- Désactive la page de captcha moche de FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
                     
+                    <!-- Redirige l'utilisateur vers ton site après l'envoi -->
+                    <input type="hidden" name="_next" value="https://minersa-min.github.io/ton-depot/#contact">
+
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Votre nom complet" required>
                     </div>
@@ -422,9 +426,6 @@
                     <div class="form-group">
                         <textarea name="message" placeholder="Votre message..." required></textarea>
                     </div>
-
-                    <!-- Champ anti-spam masqué -->
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                     <button type="submit" class="btn-submit">
                         <span>Envoyer le message</span> <i class="fas fa-paper-plane"></i>
