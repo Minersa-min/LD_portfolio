@@ -1,0 +1,75 @@
+<html lang="fr">
+    <head>
+        <title>Projet - Application de Gestion de Stock</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .project-detail-container {
+                max-width: 900px;
+                margin: 120px auto 60px auto;
+                background: var(--card-bg);
+                border: 1px solid var(--card-border);
+                padding: 40px;
+                border-radius: 20px;
+                backdrop-filter: blur(10px);
+            }
+            .back-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 25px;
+                color: var(--primary-color);
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .back-btn:hover { color: #fff; }
+            .project-detail-header { margin-bottom: 30px; border-bottom: 1px solid var(--card-border); padding-bottom: 20px; }
+            .project-detail-header h1 { font-size: 32px; color: #fff; margin-bottom: 10px; }
+            .detail-section { margin-bottom: 30px; }
+            .detail-section h3 { color: var(--primary-color); font-size: 20px; margin-bottom: 15px; border-left: 3px solid var(--primary-color); padding-left: 10px; }
+            .detail-section p, .detail-section li { color: #cbd5e1; font-size: 15px; line-height: 1.7; }
+            .detail-section ul { padding-left: 20px; }
+        </style>
+    </head>
+    <body>
+        <div class="project-detail-container">
+            <a href="index.html#projets" class="back-btn"><i class="fas fa-arrow-left"></i> Retour aux projets</a>
+            
+            <div class="project-detail-header">
+                <span class="project-type" style="background: rgba(139, 92, 246, 0.2); color: var(--primary-color); padding: 5px 15px; border-radius: 50px; font-size: 12px; font-weight: bold;">PROJET PPE (ÉCOLE) &bull; 2026</span>
+                <h1 style="margin-top: 15px;">Application de Gestion de Stock</h1>
+                <p style="color: var(--text-muted);">Logiciel lourd de gestion logistique développé en Java et MySQL.</p>
+            </div>
+
+            <div class="detail-section">
+                <h3><i class="fas fa-info-circle"></i> Contexte & Présentation</h3>
+                <p>Dans le cadre des Projets Personnels Encadrés (PPE) du BTS SIO SLAM, nous avons conçu une application lourde destinée à optimiser la chaîne d'approvisionnement et la gestion d'un entrepôt logistique.</p>
+            </div>
+
+            <div class="detail-section">
+                <h3><i class="fas fa-bullseye"></i> Objectifs & Fonctionnalités</h3>
+                <ul>
+                    <li><strong>Gestion des articles :</strong> Ajout, modification et suppression des produits en stock avec génération de références uniques.</li>
+                    <li><strong>Entrées/Sorties :</strong> Suivi automatisé des flux de marchandises en temps réel.</li>
+                    <li><strong>Alertes de réapprovisionnement :</strong> Notification automatique dès qu'un produit franchit le seuil critique minimal.</li>
+                    <li><strong>Gestion des fournisseurs :</strong> Liaison entre les articles et les fiches contacts fournisseurs.</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h3><i class="fas fa-code"></i> Technologies & Organisation</h3>
+                <ul>
+                    <li><strong>Langage :</strong> Java (Interface graphique Swing / JavaFX).</li>
+                    <li><strong>Base de données :</strong> MySQL gérée avec JDBC pour les requêtes SQL.</li>
+                    <li><strong>Gestion de version :</strong> Git & GitHub pour le suivi du code.</li>
+                    <li><strong>Méthodologie :</strong> Travail en binôme suivant les principes de la gestion de projet Agile.</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h3><i class="fas fa-check-circle"></i> Bilan du Projet</h3>
+                <p>Ce projet académique a permis de valider la maîtrise de la programmation orientée objet en Java, la modélisation de bases de données relationnelles ainsi que la gestion de requêtes sécurisées.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html lang="fr">
+    <head>
+        <title>Projet - Audit d'Accessibilité Numérique</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .project-detail-container {
+                max-width: 900px;
+                margin: 120px auto 60px auto;
+                background: var(--card-bg);
+                border: 1px solid var(--card-border);
+                padding: 40px;
+                border-radius: 20px;
+                backdrop-filter: blur(10px);
+            }
+            .back-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 25px;
+                color: var(--primary-color);
+                text-decoration: none;
+                font-weight: 600;
+            }
+            .back-btn:hover { color: #fff; }
+            .project-detail-header { margin-bottom: 30px; border-bottom: 1px solid var(--card-border); padding-bottom: 20px; }
+            .project-detail-header h1 { font-size: 32px; color: #fff; margin-bottom: 10px; }
+            .detail-section { margin-bottom: 30px; }
+            .detail-section h3 { color: var(--primary-color); font-size: 20px; margin-bottom: 15px; border-left: 3px solid var(--primary-color); padding-left: 10px; }
+            .detail-section p, .detail-section li { color: #cbd5e1; font-size: 15px; line-height: 1.7; }
+            .detail-section ul { padding-left: 20px; }
+        </style>
+    </head>
+    <body>
+        <div class="project-detail-container">
+            <a href="index.html#projets" class="back-btn"><i class="fas fa-arrow-left"></i> Retour aux projets</a>
+            
+            <div class="project-detail-header">
+                <span class="project-type" style="background: rgba(139, 92, 246, 0.2); color: var(--primary-color); padding: 5px 15px; border-radius: 50px; font-size: 12px; font-weight: bold;">PROJET DE STAGE &bull; MAI - JUIN 2026</span>
+                <h1 style="margin-top: 15px;">Audit d'Accessibilité Numérique (RGAA)</h1>
+                <p style="color: var(--text-muted);">Mise en conformité et évaluation des plateformes web de l'Université d'Évry Paris-Saclay.</p>
+            </div>
+
+            <div class="detail-section">
+                <h3><i class="fas fa-info-circle"></i> Contexte du Stage</h3>
+                <p>Réalisé sur une période de 6 semaines au sein du service informatique de l'Université d'Évry Paris-Saclay sous la supervision de l'ingénieure en développement numérique pédagogique et responsable de l'accessibilité. La mission s'inscrivait dans le cadre des obligations légales d'accessibilité numérique pour les établissements publics.</p>
+            </div>
+
+            <div class="detail-section">
+                <h3><i class="fas fa-tasks"></i> Missions & Réalisations</h3>
+                <ul>
+                    <li><strong>Formation aux normes :</strong> Étude approfondie des 27 critères sélectionnés du Référentiel Général d’Amélioration de l’Accessibilité (RGAA).</li>
+                    <li><strong>Audit technique :</strong> Analyse systématique des cours Moodle et des pages web institutionnelles à l'aide d'outils spécialisés (WAVE, Assistant RGAA, WCAG Color Contrast Checker).</li>
+                    <li><strong>Navigation sans souris :</strong> Tests complets d'ergonomie et de tabulation au clavier.</li>
+                    <li><strong>Propositions de correctifs :</strong> Rédaction de recommandations détaillées en HTML/CSS pour corriger la structure sémantique, la gestion des balises ALT sur les images et les contrastes de couleurs.</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h3><i class="fas fa-tools"></i> Outils & Technologies Utilisés</h3>
+                <ul>
+                    <li><strong>Règlementations :</strong> RGAA 4.1 & Normes WCAG (Niveau AAA visé).</li>
+                    <li><strong>Outils d'analyse :</strong> WAVE Web Accessibility Evaluation Tool, Contrast Checker, Assistant RGAA.</li>
+                    <li><strong>Environnement :</strong> Plateforme Moodle, CMS Directus, HTML5 / CSS3.</li>
+                </ul>
+            </div>
+
+            <div class="detail-section">
+                <h3><i class="fas fa-award"></i> Bilan & Apports Professionnels</h3>
+                <p>Ce stage m'a permis de développer une réelle expertise dans l'inclusivité web. J'ai appris à concevoir des interfaces utilisables par tous, notamment par les personnes utilisatrices de lecteurs d'écran, tout en appliquant une grande rigueur dans le code sémantique.</p>
+            </div>
+        </div>
+    </body>
+</html>

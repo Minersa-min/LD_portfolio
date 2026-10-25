@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+
+:root {
+    --bg-color: #03000a;
+    --card-bg: rgba(20, 16, 36, 0.7);
+    --card-border: rgba(139, 92, 246, 0.2);
+    --text-color: #f8fafc;
+    --text-muted: #94a3b8;
+    --primary-color: #a78bfa;
+    --accent-purple: #8b5cf6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+body {
+    background-image: url('japan.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(10, 10, 20, 0.85);
+    color: var(--text-color);
+    min-height: 100vh;
+    padding-bottom: 60px;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px 20px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    background: linear-gradient(to right, #ffffff, var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+nav {
+    background: rgba(10, 7, 20, 0.75);
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: 1px solid var(--card-border);
+    backdrop-filter: blur(12px);
+    width: fit-content;
+    max-width: 95%;
+    margin: 20px auto 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #fff;
+    background: rgba(139, 92, 246, 0.2);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+article {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+article h2 {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 10px;
+}
+
+article p, article li {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+article ul {
+    padding-left: 20px;
+}
+
+article a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
